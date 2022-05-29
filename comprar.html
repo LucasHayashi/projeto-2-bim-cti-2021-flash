@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <a name="ancora"></a>
+    <div class="container design">
+        <div class="header">
+            <img src="img/logotipo.png">
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="detalhes.html">Detalhes</a></li>
+                    <li><a href="anteriores.html">Anteriores</a></li>
+                    <li><a href="comprar.html">Comprar</a></li>
+                    <li><a href="design.html">Design</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="comprar-fundo">
+            <img src="img/comprar-bg.png">
+        </div>
+        <div class="formulario">
+            <form action="#" method="POST">
+                <table>
+                    <tr>
+                        <td>Nome:</td>
+                        <td><input type="text" name="nome" maxlength="45" autofocus="" required="" placeholder="Digite seu nome"></td>
+                    </tr>
+                    <tr>
+                        <td>Endereço:</td>
+                        <td><input type="text" name="endereço" maxlength="45" required="" placeholder="Digite seu endereço"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="text" name="email" maxlength="45" required="" placeholder="Digite seu email"></td>
+                    </tr>
+                    <tr>
+                        <td>Forma de pagamento</td>
+                        <td>
+                        <input type="radio" name="pagamento" value="visa"  checked="">Visa
+                        <input type="radio" name="pagamento" value="master">Master
+                        <input type="radio" name="pagamento" value="boleto">Boleto
+                        <input type="radio" name="pagamento" value="depósito">Depósito
+                        <input type="radio" name="pagamento" value="transferência">Transferência
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Modelo:</td>
+                        <td>
+                            <input type="radio" name="pagamento" value="1"  checked="">SR 4x2
+                            <input type="radio" name="pagamento" value="2">SRV 4x2
+                            <input type="radio" name="pagamento" value="4">SRX 4x4
+                            <input type="radio" name="pagamento" value="5">SRX 4x2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Quantidade:</td>
+                        <td><input id="qtd" type="number" name="qtd" maxlength="2" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><span class="comentarios">Comentarios:</span></td>
+                        <td><textarea type="text" name="comentario" rows="15" cols="45"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="enviar" value="Enviar"></td>
+                        <td><input type="reset" name="limpar" value="Limpar"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+    <div class="footer">
+            <!-- Aqui eu aproveito a formatação já existente no menu, e mudo apenas algumas coisas na classe menu-footer -->
+        <nav class="menu menu-footer"> 
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+                <li><a href="anteriores.html">Anteriores</a></li>
+                <li><a href="comprar.html">Comprar</a></li>
+                <li><a href="design.html">Design</a></li>
+            </ul>
+            <p><a href="#ancora">Clique para voltar ao topo</a></p>
+        </nav>
+    </div>
+</div>
+</body>
+</html>
